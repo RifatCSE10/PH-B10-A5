@@ -108,14 +108,14 @@
           <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border my-5">
             <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM , and why is it useful?</div>
             <div class="collapse-content">
-              <p>Document Object Model (DOM) is programming interface that we use to interact with HTML documet using JavaScript.</p>
+              <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future</p>
             </div>
           </div>
 
           <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border my-5">
             <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and style using the DOM?</div>
             <div class="collapse-content">
-              <p>Document Object Model (DOM) is programming interface that we use to interact with HTML documet using JavaScript.</p>
+              <p>Using the document.setattribute('class','Name of the calsses that I'll use to design the element).</p>
             </div>
           </div>
     </main>
@@ -124,8 +124,11 @@
         const lg_home = document.getElementById('lg-home');
         lg_home.addEventListener('click',()=>{
         window.location.href = 'index.html';
-        // console.log('home btn clicked');
-})
+     })
+     const sm_home = document.getElementById('sm-home');
+     sm_home.addEventListener('click',()=>{
+       window.location.href = 'index.html';
+     })
     </script>
   </body>
 </html>
