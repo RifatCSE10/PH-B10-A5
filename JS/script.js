@@ -15,6 +15,8 @@ const quata_input = document.getElementById('quata-input');
 const quata_input_btn = document.getElementById('quata-input-btn');
 const main_section = document.getElementById('main-section');
 const history_section = document.getElementById('history-section');
+const lg_blog_btn = document.getElementById('lg-blog');
+
 
 // Main Balnce..
 let balance = 50000;
@@ -91,10 +93,7 @@ quata_input_btn.addEventListener('click',()=>{
     quata_input.value = '';
 })
 
-
-
-
-
+// Donation and History button...
 history.addEventListener('click',()=>{
     main_section.classList.add('hidden');
     history_section.classList.remove('hidden');
@@ -108,3 +107,8 @@ donation.addEventListener('click',()=>{
     history.classList.remove('btn-bg');
     donation.classList.add('btn-bg');
 })
+
+lg_blog_btn.addEventListener('click',()=>{
+    window.location.href = 'blog.html';
+})
+
